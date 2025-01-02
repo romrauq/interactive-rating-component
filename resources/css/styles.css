@@ -54,7 +54,7 @@ body {
 }
 .rating-text {
 	color: hsl(0, 0%, 100%);
-	padding: 8px 14px;
+	padding: 8px 15px;
 	background-color: hsl(219, 12%, 23%);
 	border-radius: 50%;
 	cursor: pointer;
