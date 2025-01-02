@@ -1,9 +1,14 @@
+@font-face {
+	font-family: Overpass;
+	src: url("../fonts/Overpass-VariableFont_wght.ttf");
+}
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 body {
+	font-family: Overpass;
 	height: 100vh;
 	width: 100vw;
 	display: flex;
@@ -67,11 +72,23 @@ body {
 	border-radius: 20px;
 	border: none;
 }
-.secondary_container {
+.container-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	display: none;
 }
 .thank-you-image {
+	width: 130px;
 }
-
+.subtext {
+	color: hsl(25, 97%, 53%);
+	padding: 5px 20px;
+	margin: 20px 0 20px 0;
+	background-color: hsl(219, 12%, 23%);
+	border-radius: 20px;
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
