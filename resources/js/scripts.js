@@ -12,8 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		rating.addEventListener("click", () => {
 			// Remove 'active' class from previously selected rating
 			ratings.forEach((r) => r.classList.remove("active"));
+			ratings.forEach((r) => (r.style.backgroundColor = "hsl(219, 12%, 23%)"));
+			ratings.forEach((r) => (r.style.color = "hsl(0, 0%, 100%)"));
 			// Add 'active' class to the clicked rating
 			rating.classList.add("active");
+			rating.style.color = "hsl(219, 12%, 23%)";
+			rating.style.backgroundColor = "hsl(0, 0%, 100%)";
 			// Store the selected rating value
 			selectedRating = rating.textContent;
 		});
